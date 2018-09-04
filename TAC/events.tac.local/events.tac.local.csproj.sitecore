@@ -2,4 +2,13 @@
   <PropertyGroup>
     <Site Server="tac.corporate.sc" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
+  <File Include="Views\TAC\Events\Layouts\Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{6B173EF6-7FAC-4FE3-8BCF-CA54979E3B96}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/Layouts/Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{6B173EF6-7FAC-4FE3-8BCF-CA54979E3B96}</Item>
+  </File>
+  <File Include="Views\TAC\Events\SideContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{982A11B2-117C-4CBA-BC71-D4203F9AAE5D}</Item>
+  </File>
 </Project>

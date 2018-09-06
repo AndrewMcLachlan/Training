@@ -100,8 +100,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\BreadcrumbBuilder.cs" />
+    <Compile Include="Business\NavigationBuilder.cs" />
+    <Compile Include="Business\RelatedEventsProvider.cs" />
+    <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\RelatedEventsController.cs" />
+    <Compile Include="Models\NavigationItem.cs" />
     <Compile Include="Models\EventIntro.cs" />
+    <Compile Include="Models\NavigationMenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +217,10 @@
     <Content Include="Fonts\open-sans-v13-latin-regular.ttf" />
     <Content Include="Fonts\open-sans-v13-latin-regular.woff" />
     <Content Include="Fonts\open-sans-v13-latin-regular.woff2" />
+    <Content Include="App_Config\Include\TAC\Events\events.site.config" />
+    <Content Include="App_Config\Include\TAC\Events\Events.DefaultIndexConfiguration.config" />
+    <Content Include="App_Config\Include\TAC\Events\Solr.Events.Web.Index.config" />
+    <None Include="App_Config\Include\TAC\Events\Solr.Events.Master.Index.config" />
     <None Include="packages.config" />
     <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
@@ -221,12 +233,21 @@
     <Content Include="Views\TAC\Events\HomeContent.cshtml" />
     <Content Include="Views\TAC\Events\FeatureRow.cshtml" />
     <Content Include="Views\TAC\Events\FeaturedEvent.cshtml" />
+    <Content Include="Views\Breadcrumb\Index.cshtml" />
+    <Content Include="Views\Navigation\Index.cshtml" />
+    <Content Include="Views\RelatedEvents\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj">
+      <Project>{71417f51-8b93-4f15-a2bb-bb12fe286b24}</Project>
+      <Name>TAC.Sitecore.Abstractions</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

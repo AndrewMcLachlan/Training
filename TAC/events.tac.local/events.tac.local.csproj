@@ -220,7 +220,7 @@
     <Content Include="App_Config\Include\TAC\Events\events.site.config" />
     <Content Include="App_Config\Include\TAC\Events\Events.DefaultIndexConfiguration.config" />
     <Content Include="App_Config\Include\TAC\Events\Solr.Events.Web.Index.config" />
-    <None Include="App_Config\Include\TAC\Events\Solr.Events.Master.Index.config" />
+    <Content Include="App_Config\Include\TAC\Events\Solr.Events.Master.Index.config" />
     <None Include="packages.config" />
     <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
